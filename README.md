@@ -1,11 +1,11 @@
-# Weather-Forecast simple 7 day forecast app built with react and Foreca API
+# Weather-Forecast 
+simple 7 day forecast app built with react and Foreca API
 
 [](./public/1.png)
 
 ## Env variables
-
 ```
-REACT_APP_BASE_URL - Foreca ulr
+REACT_APP_BASE_URL - Foreca url
 REACT_APP_TOKEN - bearer token
 
 ```
