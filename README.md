@@ -1,3 +1,15 @@
+# Weather-Forecast simple 7 day forecast app built with react and Foreca API
+
+[](./public/1.png)
+
+## Env variables
+
+```
+REACT_APP_BASE_URL - Foreca ulr
+REACT_APP_TOKEN - bearer token
+
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
