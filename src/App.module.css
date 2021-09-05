@@ -1,0 +1,21 @@
+@media screen and (min-width: 768px) {
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #100E1D;
+    display: grid;
+    grid-template-columns: 33.1% 66.9%;
+    margin: 0;
+}
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        min-width: 100vw;
+        min-height: 370vh;
+        background: #100E1D;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr minmax(1fr, 300vh);
+    }
+}
+
