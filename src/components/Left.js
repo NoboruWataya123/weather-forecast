@@ -39,6 +39,11 @@ export default function Left() {
 
     return (
         <div className={styles.container}>
+            <div className={styles.left}>
+                <button className={styles.search}>
+                Searh for place
+                </button>
+            </div>
             <div className={styles.image}>
                 <img src={`https://developer.foreca.com/static/images/symbols/${symbol}.png`} alt="symbol" className={styles.symbol}/>
             </div>

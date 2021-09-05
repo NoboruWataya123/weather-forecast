@@ -2,13 +2,33 @@
     background: #1E213A;
 }
 
+.left{
+    display: flex;
+    justify-content: flex-start;
+    padding: 1rem 0 0 2rem;
+    height: 10%;
+}
+.search{
+    height: 100%;
+    width: 12rem;
+    height: 3rem;
+    cursor: pointer;
+    background: #6E707A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #E7E7EB;
+    }
 .image{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
-    height: 30%;
+    height: 15%;
 }
 
 .temperature{
@@ -20,11 +40,8 @@
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
-    font-size: 144px;
+    font-size: 8rem;
     line-height: 169px;
-    /* identical to box height */
-
-
     color: #E7E7EB;
 }
 
@@ -38,7 +55,7 @@
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 2rem;
     line-height: 42px;
     text-align: center;
     color: #A09FB1;
@@ -48,7 +65,7 @@
     font-family: Raleway;
     font-style: normal;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.5rem;
     line-height: 22px;
     color: #A09FB1;
 }
@@ -60,7 +77,6 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding-top: 2rem;
     height: 30%;
 }
 .container{
@@ -68,4 +84,80 @@
     padding: 0 1rem 1rem 1rem;
     margin-bottom: 1.5rem;
 }
+.temperature{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 169px;
+    color: #E7E7EB;
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 42px;
+    text-align: center;
+    color: #A09FB1;
+}
+
+}
+
+@media screen and (max-width: 968px){
+    .image{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding-top: 1rem;
+        height: 20%;
+    }
+    .temperature{
+        width: 100%;
+        height: 30%;
+    }
+    
+    .description{
+        width: 100%;
+        height: 30%;
+    }
+    .container{
+        height: 100vh;
+        padding: 0 1rem 1rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .left{
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem 0 0 0rem;
+        height: 10%;
+    }
+    .search{
+        height: 100%;
+        width: 9rem;
+        height: 3rem;
+        cursor: pointer;
+        background: #6E707A;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Raleway;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #E7E7EB;
+        }
 }
