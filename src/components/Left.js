@@ -7,17 +7,23 @@ export default function Left() {
     const [temperature, setTemperature] = useState(0)
     const [description, setDescription] = useState('')
     const [symbol, setSymbol] = useState('')
-    const [date, setDate] = useState('')
-    
 
     useEffect(() => {
-        fetchData().then(data => {
-            setTemperature(data.forecast[0].maxTemp)
-            setDescription(data.forecast[0].symbolPhrase)
-            setSymbol(data.forecast[0].symbol)
-            setDate(data.forecast[0].date)
+        fetchData(`current/102013159&lang=ru`).then(data => {
+            setTemperature(data.current.temperature)
+            setDescription(data.current.symbolPhrase)
+            setSymbol(data.current.symbol)
         })
     }, [])
+
+    // useEffect(() => {
+    //     fetchData().then(data => {
+    //         setTemperature(data.forecast[0].maxTemp)
+    //         setDescription(data.forecast[0].symbolPhrase)
+    //         setSymbol(data.forecast[0].symbol)
+    //         setDate(data.forecast[0].date)
+    //     })
+    // }, [])
     // const url = process.env.REACT_APP_BASE_URL
     // const token = process.env.REACT_APP_TOKEN
     // // fetch data from API with token
@@ -52,7 +58,7 @@ export default function Left() {
             </div>
             <div className={styles.description}>
                 <p>{description}</p>
-                <p className={styles.date}>{getDayOfWeek(date)} {date}</p>
+                <p className={styles.date}>{getDayOfWeek(Date.now())}</p>
             </div>
         </div>
     )

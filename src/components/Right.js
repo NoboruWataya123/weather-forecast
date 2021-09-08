@@ -16,7 +16,7 @@ export default function Right() {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        fetchData().then(data => {
+        fetchData(`forecast/daily/102013159&lang=ru&dataset=full`).then(data => {
             setData(data.forecast)
         })
     }, [])
