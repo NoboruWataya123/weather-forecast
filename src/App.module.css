@@ -12,7 +12,7 @@
 @media screen and (max-width: 768px) {
     .container{
         min-width: 100vw;
-        min-height: 370vh;
+        min-height: 310vh;
         background: #100E1D;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr minmax(1fr, 300vh);

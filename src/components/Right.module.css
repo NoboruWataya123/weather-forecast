@@ -4,11 +4,13 @@
 }
 
 .cards{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 90%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    padding-left: 1rem;
+    grid-gap: 20px;
+    grid-auto-rows: 1fr 1fr;
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
@@ -19,10 +21,11 @@
 }
 
 .card{
-    width: 20%;
-    height: 25%;
+    width: 100%;
+    height: 100%;
     background: #1E213A;
-    margin: 1rem 2rem 0 2rem;
+    margin: 1.5rem 2rem 0 2.5rem;
+    padding-right: 0;
 }
 
 .card_title{
@@ -31,7 +34,7 @@
 
 .symbol{
     width: 56.44px;
-height: 62px;
+    height: 62px;
 }
 
 .card_content{
@@ -69,13 +72,52 @@ justify-content: center;
     margin-right: 1rem;
 }
 
-@media screen and (max-width: 968px){
-    .card{
-        width: 40%;
-        height: 30%;
-        background: #1E213A;
-        margin: 1rem 0 0 2rem;
-    }
+.block_desc{
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 20px;
+    grid-auto-rows: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30vh;
+    width: 60vw;
+    padding: 0 0 2rem 3.5rem;
+}
+
+.block_card{
+    width: 100%;
+    height: 100%;
+    background: #1E213A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 45px;
+    align-items: center;
+    color: #E7E7EB;
+}
+
+.block_card p{
+    margin: 0;
+    padding: 0;
+}
+
+.line{
+    width: 229px;
+    height: 8px;
+    margin-top: 0.5rem;
+    background: #E7E7EB;
+    border-radius: 80px;
+}
+
+.bar{
+    width: 84%;
+    height: 8px;
+    background: #FFEC65;
+    border-radius: 80px;
 }
 
 @media screen and (max-width: 768px) {
@@ -83,7 +125,7 @@ justify-content: center;
         width: 100%;
         height: 30%;
         background: #1E213A;
-        margin: 1rem;
+        margin: 0.5rem 2rem 0 2rem;
     }
 
     .container{
@@ -97,7 +139,7 @@ justify-content: center;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    
+        padding-left: 0;
         font-family: Raleway;
         font-style: normal;
         font-weight: 500;
@@ -105,5 +147,13 @@ justify-content: center;
         line-height: 19px;
         text-align: center;
         color: #E7E7EB;
+    }
+
+    .block_desc{
+        display: none;
+    }
+    
+    .block_card{
+        display: none;
     }
 }

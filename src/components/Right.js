@@ -26,7 +26,7 @@ export default function Right() {
     return (
         <div className={styles.container}>
             <div className={styles.cards}>
-                {data && data.map(item => 
+                {data && data.slice(1).map(item => 
                     <div key={item.date} className={styles.card}>
                         <div className={styles.card_title}>
                             <h3>{getDayOfWeek( item.date )} <br /> {item.date}</h3>
@@ -46,6 +46,23 @@ export default function Right() {
                     </div>
                 )}
             </div>
+            <div className={styles.block_desc}>
+                    <div className={styles.block_card}>
+                        <p>Wind status</p>
+                        <p>7 mph</p>
+                    </div>
+                    <div className={styles.block_card}>
+                        <p>Humidity</p>
+                        <p>84%</p>
+                        <div className={styles.line}>
+                            <div className={styles.bar}></div>
+                        </div>
+                    </div>
+                    <div className={styles.block_card}>
+                        <p>Visibility</p>
+                        <p>7 miles</p>
+                    </div>
+                </div>
         </div>
     )
 }
