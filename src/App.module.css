@@ -1,6 +1,5 @@
 @media screen and (min-width: 768px) {
   .container {
-    width: 100vw;
     min-height: 100vh;
     background: #100e1d;
     display: grid;
